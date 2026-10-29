@@ -1,4 +1,4 @@
-# SentinelOps SOC 2.0
+# SentinelOps SOC 
 
 **Synthetic demo:** follow [START_HERE.md](START_HERE.md). No VM or live API credentials are needed.
 
