@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "status": "PASSED",
+  "mode": "SIMULATION_ONLY",
+  "generated_utc": "2026-10-19T08:35:34.888453+00:00",
+  "transport": "in-process ASGI; not browser or listening-server validation",
+  "live_gemini": "NOT_RUN",
+  "browser_capture": "NOT_RUN",
+  "production_data": "NOT_OPENED",
+  "seeded_cases": 3,
+  "stages": [
+    {
+      "stage": "SIGNED_SYNTHETIC_INVESTIGATION",
+      "passed": true,
+      "assessment": "ATTACK_CONFIRMED",
+      "current_evidence_records": 2,
+      "block_present": false
+    },
+    {
+      "stage": "UNAUTHENTICATED_AND_VIEWER_DENIED",
+      "passed": true,
+      "unauthenticated_http": 401,
+      "viewer_http": 403
+    },
+    {
+      "stage": "PENDING_EXECUTION_DENIED",
+      "passed": true,
+      "http_status": 403,
+      "block_present": false
+    },
+    {
+      "stage": "EXPLICIT_ANALYST_APPROVAL",
+      "passed": true,
+      "request_status": "APPROVED",
+      "block_present": false
+    },
+    {
+      "stage": "SIMULATED_EXECUTION",
+      "passed": true,
+      "block_present": true,
+      "verification_source": "synthetic_sqlite_probe"
+    },
+    {
+      "stage": "EXECUTION_RETRY",
+      "passed": true,
+      "same_receipt": true,
+      "execution_audit_count": 1
+    },
+    {
+      "stage": "EXPLICIT_VERIFICATION",
+      "passed": true,
+      "source": "synthetic_sqlite_probe"
+    },
+    {
+      "stage": "ROLLBACK_AND_RETRY",
+      "passed": true,
+      "lifecycle_state": "ROLLED_BACK",
+      "block_present": false,
+      "rollback_audit_count": 1
+    },
+    {
+      "stage": "HISTORICAL_EXECUTION_REPLAY",
+      "passed": true,
+      "same_receipt": true,
+      "block_present": false
+    }
+  ],
+  "cleanup": "PASSED"
+}

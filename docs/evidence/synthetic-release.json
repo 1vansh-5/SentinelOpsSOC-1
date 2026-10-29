@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-28",
+  "mode": "SYNTHETIC_DEMO",
+  "application_scripts_tests_unchanged": true,
+  "current_checks": {
+    "source_hygiene": "PASSED: 121 files, no findings; JavaScript syntax checked",
+    "handoff_contracts": "4/4 PASSED"
+  },
+  "historical_checks": {
+    "regression": "30/30 jobs PASSED; cleanup PASSED",
+    "walkthrough": "9/9 stages PASSED; cleanup PASSED",
+    "reports": "docs/evidence/validation.json and walkthrough.json retain original dates"
+  },
+  "full_regression_rerun": "NOT RUN: previous Python 3.15 environment cannot launch; available Python 3.14 lacks application dependencies",
+  "browser_and_tcp_validation": "NOT RUN",
+  "live_provider": "DISABLED in demo; NOT RUN",
+  "github_modified": false,
+  "real_firewall_actions": false
+}

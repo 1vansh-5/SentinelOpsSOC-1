@@ -1,0 +1,11 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {"safe": {"()": "app.structured_logging.SafeJSONFormatter"}},
+  "handlers": {"safe": {"class": "logging.StreamHandler", "formatter": "safe", "stream": "ext://sys.stdout"}},
+  "loggers": {
+    "uvicorn": {"handlers": ["safe"], "level": "INFO", "propagate": false},
+    "uvicorn.error": {"handlers": ["safe"], "level": "INFO", "propagate": false},
+    "uvicorn.access": {"handlers": [], "level": "CRITICAL", "propagate": false}
+  }
+}

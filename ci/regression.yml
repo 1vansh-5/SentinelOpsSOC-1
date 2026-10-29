@@ -1,0 +1,45 @@
+# Ready-to-use workflow. Install at .github/workflows/regression.yml
+# only when you choose to enable GitHub CI. No credentials are required.
+name: SentinelOps operational regression
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  regression:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.15'
+          cache: pip
+          cache-dependency-path: requirements-step9-lock.txt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '26.7.0'
+      - name: Install fixed test dependencies
+        run: python -m pip install -r requirements.txt
+      - name: Check dependencies
+        run: python -m pip check
+      - name: Syntax and source credential exposure checks
+        run: python manage.py hygiene check --node node
+      - name: Run offline regression with three concurrency repetitions
+        run: python manage.py checks --socket-free-http
+      - name: Preserve diagnostic reports
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: step12-results-${{ matrix.os }}
+          path: |
+            STEP12_TEST_RESULTS.json
+            STEP12_TEST_RESULTS.txt
+          if-no-files-found: warn
+          retention-days: 14

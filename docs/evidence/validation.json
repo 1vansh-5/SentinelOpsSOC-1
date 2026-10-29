@@ -1,0 +1,238 @@
+{
+  "format": 1,
+  "mode": "SIMULATION_ONLY",
+  "layout": "organized app/tests/scripts/docs",
+  "generated_utc": "2026-10-19T08:37:36.032224+00:00",
+  "application_modules_and_dashboard_bytes_unchanged": true,
+  "regression": {
+    "passed": true,
+    "summary": "30/30 test jobs passed; cleanup: PASSED",
+    "started_utc": "2026-10-19T08:35:05.767682+00:00",
+    "jobs": [
+      {
+        "group": "unit_and_security",
+        "suite": "test_step_2_security.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "unit_and_security",
+        "suite": "test_step_3_collector_lifecycle.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "unit_and_security",
+        "suite": "test_step_4_evidence_trust.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "unit_and_security",
+        "suite": "test_step_4_authenticated_provenance.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "unit_and_security",
+        "suite": "test_step5_analyst_identity.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "unit_and_security",
+        "suite": "test_step8_gemini.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "unit_and_security",
+        "suite": "test_step8_deadline_floor.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "sqlite_and_transactions",
+        "suite": "test_step4_incident_evidence_store.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "sqlite_and_transactions",
+        "suite": "test_step4_registry_storage_integration.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "sqlite_and_transactions",
+        "suite": "test_step4_response_authorization.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "sqlite_and_transactions",
+        "suite": "test_step5_integrated.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "sqlite_and_transactions",
+        "suite": "test_step6_integrated.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "sqlite_and_transactions",
+        "suite": "test_step7_lifecycle.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "api_integration",
+        "suite": "test_step4_api_ingestion.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "api_integration",
+        "suite": "test_step6_http.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "api_integration",
+        "suite": "test_step7_http_contracts.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "api_integration",
+        "suite": "test_step8_http.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "gate_safety",
+        "suite": "test_step9_gate.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "dashboard",
+        "suite": "test_step10_dashboard.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "dashboard",
+        "suite": "test_step10_frontend.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "dashboard",
+        "suite": "test_step10_demo.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "final_handoff",
+        "suite": "test_step12_walkthrough.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "final_handoff",
+        "suite": "test_step12_contracts.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "operations",
+        "suite": "test_step11_operations.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "operations",
+        "suite": "test_step11_logging.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "operations",
+        "suite": "test_step11_hygiene.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "operations",
+        "suite": "test_step11_clean_setup.py",
+        "repeat": null,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "concurrency",
+        "suite": "test_step9_concurrency.py",
+        "repeat": 1,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "concurrency",
+        "suite": "test_step9_concurrency.py",
+        "repeat": 2,
+        "passed": true,
+        "returncode": 0
+      },
+      {
+        "group": "concurrency",
+        "suite": "test_step9_concurrency.py",
+        "repeat": 3,
+        "passed": true,
+        "returncode": 0
+      }
+    ]
+  },
+  "walkthrough": "9/9 stages passed; cleanup: PASSED",
+  "launcher_configuration_check": "PASSED",
+  "source_hygiene": {
+    "passed": true,
+    "checked_files": 120,
+    "findings": [],
+    "javascript_syntax": "CHECKED",
+    "git_history": "NOT_SCANNED"
+  },
+  "browser_screenshots_and_video": "PENDING_LOCAL_CAPTURE",
+  "live_gemini": "NOT_RUN",
+  "remote_ci_and_docker": "NOT_RUN",
+  "github_modified": false,
+  "real_firewall_actions": false
+}

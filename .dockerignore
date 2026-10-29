@@ -1,0 +1,16 @@
+**
+!Dockerfile
+!requirements.txt
+!requirements-step9-lock.txt
+!app/
+!app/*.py
+!app/dashboard/
+!app/dashboard/index.html
+!app/dashboard/dashboard.css
+!app/dashboard/dashboard.js
+!app/dashboard/sample.js
+!ops/
+!ops/uvicorn_logging.json
+app/*backup*
+app/*before_race*
+app/*race_fix_attempt*
